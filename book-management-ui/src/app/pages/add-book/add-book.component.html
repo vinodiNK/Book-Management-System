@@ -1,0 +1,31 @@
+<div class="container mt-5">
+
+    <h2>Add New Book</h2>
+
+    <form (ngSubmit)="addBook()">
+
+        <div class="mb-3">
+            <label>Title</label>
+            <input type="text" class="form-control" [(ngModel)]="book.title" name="title">
+        </div>
+
+        <div class="mb-3">
+            <label>Author</label>
+            <input type="text" class="form-control" [(ngModel)]="book.author" name="author">
+        </div>
+
+        <div class="mb-3">
+            <label>ISBN</label>
+            <input type="text" class="form-control" [(ngModel)]="book.isbn" name="isbn">
+        </div>
+
+        <div class="mb-3">
+            <label>Publication Date</label>
+            <input type="date" class="form-control" [(ngModel)]="book.publicationDate" name="publicationDate">
+        </div>
+
+        <button class="btn btn-success">Save Book</button>
+
+    </form>
+
+</div>
