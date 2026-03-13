@@ -11,10 +11,10 @@ namespace BookManagementAPI.Data
             return books;
         }
 
-        public Book GetById(int id)
-        {
-            return books.FirstOrDefault(b => b.Id == id);
-        }
+        public Book? GetById(int id)
+{
+    return books.FirstOrDefault(b => b.Id == id);
+}
 
         public void Add(Book book)
         {
